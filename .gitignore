@@ -1,0 +1,53 @@
+# Python / Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Envs
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Build / Packaging
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Logs
+*.log
+logs/
+*.txt
+
+# Appium temp
+appium_tmp/
+appium-recordings/
+
+# APK staging areas
+*.apk
+
+# env files for secrets
+.env
+.env.*
+config.env
+
+# PyInstaller
+*.pkg
+*.dmg
+
+# Coverage / Testing
+.coverage
+.coverage.*
+htmlcov/
+pytest_cache/
+.cache/
