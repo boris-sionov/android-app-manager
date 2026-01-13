@@ -42,7 +42,7 @@ class AdbManager:
             error_msg = "APK path is invalid or file not found."
             logger.warning(error_msg)
             return error_msg
-        return self.run(["adb", "install", apk_path], device_ip)
+        return self.run(["adb", "-s", device_ip, "install", "-r", "-d", apk_path], device_ip)
 
     def uninstall_package(self, package, device_ip=None):
         self.log(f"Uninstalling package '{package}' on device {device_ip or 'default'}")
